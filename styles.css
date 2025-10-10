@@ -1100,6 +1100,12 @@
         width: 100%;
     }
     /* Why Us Section */
+
+    .why-us-section{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
     .why-us-card-wrapper {
         height: auto;
         flex-direction: column;
@@ -1110,6 +1116,28 @@
     .why-us-header {
         width: 100%;
     }
+
+    .first-text{
+        font-size: 2rem;
+    }
+
+    .travel{
+        font-size: 2rem;
+    }
+
+    .tm{
+        font-size: 0.5rem;
+    }
+
+    .why-us-section-summary{
+        font-size: 1.2rem;
+    }
+
+    .section-logo{
+        display: flex;
+        flex-direction: row;
+    }
+
     .why-us-card-wrapper {
         width: 100%;
         display: flex;
@@ -1121,6 +1149,23 @@
     .why-us-card-sum {
         font-size: 1rem;
     }
+
+    /* PP Section */
+
+    .pp-card{
+        overflow: hidden;
+
+    }
+
+    .days p{
+        font-size: 1rem;
+    }
+
+    .location-chip-wrapper{
+        flex-wrap: wrap;
+    }
+
+
     /* Footer */
     .footer-section-header h2 {
         font-size: 1.8rem;
