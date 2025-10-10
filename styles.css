@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Prompt', sans-serif;
+}
+
+.body-wrapper{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    overflow: hidden;
+}
+
+.nav-bar{
+    display: flex;
+    flex-direction: column;
+}
+
+.web-nav{
+    /* width: 70rem;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    border: solid 1px white;
+    border-radius: 100rem;
+    position: fixed;
+    margin-top: 10px;
+    justify-self: center;
+    align-self: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(8px); */
+
+    width: 70rem;
+    display: flex;
+    flex-direction: row;
+    padding: 1rem 2rem;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+
+    /* Glassmorphism core */
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(2px) saturate(80%);
+    -webkit-backdrop-filter: blur(8px) saturate(80%);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 100rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+
+    /* Optional subtle gradient overlay for depth */
+    background-image: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.15) 0%,
+        rgba(255, 255, 255, 0.05) 100%
+    );
+}
+
+.nav-link-wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 1.5rem;
+}
+
+.nav-link-text{
+    text-decoration: none;
+}
+
+.nav-link p{
+    color: #17346F;
+    font-size: 1rem;
+    font-weight: 300;
+    transition: ease 0.3ms;
+}
+
+.nav-link p:hover{
+    color: #4C5C92;
+}
+
+.nav-button{
+    width: fit-content;
+    height: 58px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.5rem;
+    padding: 0.6rem 2rem;
+    border-radius: 100rem;
+    border: 1px solid #113279;
+    background: linear-gradient(0deg, #061128 38.08%, #153C8E 89.78%);
+    color: white;
+    font-weight: 200;
+    cursor: pointer;
+    transition: all 0.35s ease;
+    box-shadow: 0 4px 15px rgba(17, 50, 121, 0.25);
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-button:hover {
+    background: linear-gradient(0deg, #153C8E 20%, #1E4FD1 90%);
+    box-shadow: 0 8px 20px rgba(17, 50, 121, 0.4);
+    border-color: #1E4FD1;
+}
+
+.mobile-nav{
+    display: none;
+    /* width: 10rem;
+    display: flex;
+    flex-direction: row;
+    padding: 1rem 2rem;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+
+    /* Glassmorphism core 
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(2px) saturate(80%);
+    -webkit-backdrop-filter: blur(8px) saturate(80%);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 100rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+
+    Optional subtle gradient overlay for depth 
+    background-image: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.15) 0%,
+        rgba(255, 255, 255, 0.05) 100%
+    ); */
+}
+
+.content-wrapper{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.5rem;
+    padding: 10px;
+    justify-content: start;
+}
+
+.hero-section{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.5rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: 22rem 5rem 5rem 5rem;
+    background-image: url('./Images/heroimage.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 1.5rem;
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.1); /* 10% white overlay */
+    z-index: 1;
+}
+
+.header-wrapper{
+    width: 40rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+
+.section-header h1{
+    font-size: 4rem;
+    text-align: center;
+    font-weight: 500;
+    color: 090909;
+}
+
+.first-text{
+    font-weight: 100;
+}
+
+.header-summary{
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #222222;
+}
+
+.button-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1.2rem;
+    padding: 1rem;
+}
+
+.secondary-button{
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.5rem;
+    padding: 1.2rem 1.8rem;
+    border-radius: 62.4375rem;
+    border: 1px solid var(--Neutral-14, #FEFEFE);
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.8) 0%,
+        var(--Neutral-8, #F6F6F6) 45.81%
+    );
+    box-shadow: 0 4px 4px 2px rgba(0, 0, 0, 0.1);
+    color: #061128;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.35s ease;
+}
+
+.secondary-button:hover {
+    border-radius: 62.4375rem;
+    border: 1px solid var(--Neutral-14, #FEFEFE);
+    background: var(--Neutral-10, #FAFAFA);
+    box-shadow: 0 4px 4px 2px rgba(0, 0, 0, 0.10);
+    transform: translateY(-2px);
+}
+
+.outline-button{
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.5rem;
+    align-items: center;
+    padding: 1.2rem 1.8rem;
+    border-radius: 62.4375rem;
+    border: 1px solid var(--Black-12, #BDBDBD);
+    background: rgba(255, 255, 255, 0.10);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    color: #222222;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.outline-button:hover {
+    background: rgba(255, 255, 255, 0.18);
+    border-color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.outline-button:active {
+    transform: translateY(0);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12);
+}
+
+.hero-feature{
+    width: 50rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.destination-card{
+    display: flex;
+    flex: 1 1;
+    flex-direction: column;
+    row-gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.big-text{
+    font-size: 4rem;
+    font-weight: 100;
+    color: #2090909;
+}
+
+.small-text p{
+    font-size: 1.5rem;
+    font-weight: 200;
+    color: #222222;
+}
