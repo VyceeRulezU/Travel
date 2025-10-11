@@ -1072,6 +1072,7 @@
     .top-fd-card-wrapper,
     .buttom-fd-card-wrapper {
         flex-direction: column;
+        row-gap: 1rem;
     }
     .sm-card,
     .big-card {
@@ -1163,6 +1164,7 @@
 
     .location-chip-wrapper{
         flex-wrap: wrap;
+        gap: 1rem;
     }
 
 
@@ -1174,13 +1176,18 @@
         width: 100%;
     }
     .input-group {
-        flex-direction: column;
+        flex-direction: row;
         row-gap: 1rem;
     }
     .button {
-        width: 100%;
+        width: fit-content;
         font-size: 0.9rem;
     }
+
+    .sub-text{
+        text-align: center;
+    }
+
     .footer-link-wrapper {
         flex-direction: column;
         align-items: start;
