@@ -1190,6 +1190,13 @@
     .cta-link {
         font-size: 1rem;
     }
+
+    .card-cta{
+        height: auto;
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
+
     /* Popular Destinations */
     .pp-card-wrapper {
         width: 100%;
