@@ -739,7 +739,6 @@
     flex-direction: row;
     column-gap: 1rem;
     position: relative;
-    overflow: hidden;
     align-items: center;
     color: #BDBDBD;
 }
