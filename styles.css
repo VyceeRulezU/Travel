@@ -7,6 +7,43 @@
     font-family: 'Prompt', sans-serif;
 }
 
+@keyframes pageFadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ============================
+   🖼️ Lazy Load Image Animation
+============================ */
+.lazy-image {
+  opacity: 0;
+  transform: scale(1.02);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.lazy-image.loaded {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* ============================
+   📜 Scroll Fade-in Animation
+============================ */
+.section-fade {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.section-fade.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
 .body-wrapper {
     width: 100%;
     height: auto;
@@ -330,10 +367,13 @@
     padding: 4px;
     border-radius: 1rem;
     border: solid 1px #F6F6F6;
+   
 }
 
 .destination-card:hover {
     border-color: #91A5CF;
+  
+    
 }
 
 .sm-card {

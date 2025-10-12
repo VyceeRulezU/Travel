@@ -21,3 +21,27 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+
+
+// Lazy load + scroll reveal
+document.addEventListener("DOMContentLoaded", () => {
+  const lazyImages = document.querySelectorAll("img.lazy-image");
+  const fadeSections = document.querySelectorAll(".section-fade");
+
+  const observerOptions = {
+    threshold: 0.2,
+    rootMargin: "0px 0px 150px 0px"
+  };
+
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible", "loaded");
+        obs.unobserve(entry.target);
+      }
+    });
+  }, observerOptions);
+
+  [...lazyImages, ...fadeSections].forEach(el => observer.observe(el));
+});
+
