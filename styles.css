@@ -392,7 +392,7 @@
 }
 
 .card-header-text {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #090909;
     font-weight: 400;
 }
@@ -420,7 +420,7 @@
 }
 
 .card-amount {
-    font-size: 1.35rem;
+    font-size: 1.1rem;
     color: #090909;
     font-weight: 500;
 }
