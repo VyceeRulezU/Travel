@@ -535,13 +535,14 @@
 }
 
 .why-us-card-header {
-    font-size: 2rem;
+    text-align: center;
+    font-size: 1.5rem;
     font-weight: 500;
     color: #090909;
 }
 
 .why-us-card-sum {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 300;
     text-align: center;
     color: #737373;
