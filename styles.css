@@ -1305,6 +1305,11 @@
 
     }
 
+    .pp-card-header{
+        width: 100%;
+        align-items: end;
+    }
+
     .chip1{
         width: fit-content;
     }
