@@ -1305,6 +1305,10 @@
 
     }
 
+    .chip1{
+        width: fit-content;
+    }
+
     .days p{
         font-size: 1rem;
     }
