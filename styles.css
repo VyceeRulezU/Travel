@@ -668,6 +668,12 @@
     background-image: url(./Images/15793.jpg);
 }
 
+
+.chip1{
+    width: fit-content;
+}
+
+
 .days-chip-container {
     display: flex;
     flex-direction: row;
