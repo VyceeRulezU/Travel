@@ -1045,12 +1045,16 @@
         flex-direction: row;
         row-gap: 3rem;
     }
-    .footer-logo-container,
+
     .footer-link-wrapper {
         width: 100%;
         flex-direction: column;
         row-gap: 2rem;
         align-items: start;
+    }
+
+    .footer-link-wrapper{
+        flex-direction: row;
     }
 
 }    
