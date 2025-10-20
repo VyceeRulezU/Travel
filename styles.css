@@ -950,6 +950,112 @@
 /* ===========================
    🧩 Tablet (≤1024px)
 =========================== */
+@media (min-width: 1000px) and (max-width: 1700px) {
+
+     .web-nav {
+        width: 90%;
+        padding: 0.8rem 1.5rem;
+    }
+    .nav-link-wrapper {
+        column-gap: 1rem;
+    }
+    .nav-button {
+        padding: 0.5rem 1.5rem;
+        font-size: 0.9rem;
+    }
+    /* Hero Section */
+    .hero-section {
+        padding: 16rem 2rem 4rem 2rem;
+        height: 100vh;
+    }
+    .header-wrapper {
+        width: 80%;
+    }
+    .section-header h1 {
+        font-size: 3rem;
+    }
+    .header-summary {
+        font-size: 1.2rem;
+    }
+    .hero-feature {
+        width: 80%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+
+    .chip-card {
+        flex: 1 1;
+        margin-bottom: 1rem;
+    }
+    /* Cards and Sections */
+    .fearured-destination-section,
+    .popular-destination-section,
+    .why-us-section,
+    .footer-cta-section {
+        padding: 3rem 2rem;
+    }
+    .container-fixed-width {
+        width: 95%;
+    }
+    .featured-header {
+        width: 100%;
+    }
+    .section-header h2 {
+        font-size: 2.5rem;
+    }
+    .section-summary {
+        font-size: 1.2rem;
+    }
+    /* Why Us Cards */
+
+    .why-us-header{
+        width: 70%;
+    }
+
+    .why-us-card-wrapper {
+        flex-wrap: wrap;
+        row-gap: 2rem;
+    }
+    .why-us-card {
+        flex: 1 1 45%;
+    }
+    /* Popular Destination Grid */
+    .pp-card-wrapper {
+        grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+    }
+    .pp-card {
+        height: auto;
+        overflow: hidden;
+    }
+
+    .location-chip-wrapper{
+        flex-wrap: wrap;
+    }
+
+    /* Footer */
+    .footer-content-container,
+    .footer-section-header {
+        width: 100%;
+    }
+    .footer-section-header h2 {
+        font-size: 3rem;
+    }
+    .top-container {
+        flex-direction: row;
+        row-gap: 3rem;
+    }
+    .footer-logo-container,
+    .footer-link-wrapper {
+        width: 100%;
+        flex-direction: column;
+        row-gap: 2rem;
+        align-items: start;
+    }
+
+}    
+
+
 @media (max-width: 1024px) {
     /* Navigation */
     .web-nav {
@@ -1017,9 +1123,21 @@
     .pp-card-wrapper {
         grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
     }
-    .pp-card {
+
+    .popular-destination-section {
         height: auto;
+        padding: 2.5rem;
     }
+
+   .pp-card {
+        height: auto;
+        overflow: hidden;
+    }
+
+    .location-chip-wrapper{
+        flex-wrap: wrap;
+    }
+
     /* Footer */
     .footer-content-container,
     .footer-section-header {
@@ -1042,7 +1160,7 @@
 }
 
 /* ===========================
-   📱 Mobile (≤768px)
+   📱 Mobile (≤790px)
 =========================== */
 @media (max-width: 768px) {
     html {
